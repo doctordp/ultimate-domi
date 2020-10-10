@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.root-container {
+  width: 100%;
+  height: 100%;
+}
+
+.root-container .sidenav {
+  transition: all 0.6s;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  float: left;
+  width: 200px;
+  background: rgba(84, 84, 84);
+  font-family: "Ubuntu-MonoSpace";
+  color: lime;
+  height: 100%;
+  left: 0px;
+  z-index: 2;
+}
+
+.sidenav__toggle {
+  display: none;
+}
+
+.root-container__full-overlay {
+  padding: 0;
+  margin: 0;
+  transition: all 0.6s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: none;
+  opacity: 0;
+}
+
+.root-container .center {
+  margin-top: 0;
+  transition: all 0.6s;
+  float: left;
+  margin-left: 200px;
+  background: rgba(50, 50, 50);
+  height: 100%;
+  width: calc(100% - 200px);
+}
+
+.root-container .center .header {
+  padding: 10px;
+  background: black;
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  left: 200px;
+}
+
+.root-container .center .content {
+  margin: 10px;
+  background: gray;
+  max-height: 100%;
+  max-height: calc(100% - 50px);
+  overflow: auto;
+}
+
+@media only screen and (max-width: 959px) {
+  .root-container .center {
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .root-container .sidenav {
+    left: -200px;
+  }
+  .root-container .sidenav.opened {
+    left: 0px;
+  }
+  .sidenav__toggle {
+    display: block;
+  }
+  .root-container__full-overlay.opened {
+    display: block;
+    opacity: 0.5;
+  }
+  .title,
+  .title-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .root-container .center .header.sidenav-opened {
+    transition: all 0.6s;
+    padding-left: 200px;
+  }
+  .root-container .center .header .title-button.close {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "Ubuntu-MonoSpace";
+  src: url(../assets/fonts/UbuntuMono-B.ttf);
+}
+
+.root-container .center .header .title,
+a {
+  font-family: "Ubuntu-MonoSpace";
+  color: lime;
+  margin: 0;
+  transition: all 0.6s;
+}
+
+.sidenav-item {
+  width: 90%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.sidenav-item:hover {
+  background-color: rgba(70, 70, 70, 0.5);
+}

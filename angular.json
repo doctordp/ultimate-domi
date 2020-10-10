@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ultimate-domi"
+    }
+  },
+  "defaultProject": "ultimate-domi",
+  "cli": {
+    "analytics": false
+  }
 }

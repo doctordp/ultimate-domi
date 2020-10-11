@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Ubuntu-MonoSpace";
+  src: url(../assets/fonts/UbuntuMono-B.ttf);
+}
+
 *,
 *:before,
 *:after {
@@ -71,6 +76,37 @@
   overflow: auto;
 }
 
+.root-container .center .header .title,
+a {
+  font-family: "Ubuntu-MonoSpace";
+  color: lime;
+  margin: 0;
+  transition: all 0.6s;
+}
+
+.root-container .sidenav .sidenav-item {
+  width: 90%;
+  margin-top: auto;
+}
+
+.root-container .sidenav .sidenav-item:hover {
+  transition: all 0.1s;
+  margin-top: auto;
+  font-size: 20px;
+}
+
+.root-container .center .header .openSidenavButton {
+  display: none;
+}
+
+.root-container .sidenav .closebtn.close {
+  display: none;
+}
+.root-container .sidenav .logo {
+  margin: auto;
+  max-width: 50%;
+}
+
 @media only screen and (max-width: 959px) {
   .root-container .center {
     padding-left: 0px;
@@ -90,41 +126,35 @@
     display: block;
     opacity: 0.5;
   }
-  .title,
-  .title-button {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
 
   .root-container .center .header.sidenav-opened {
     transition: all 0.6s;
     padding-left: 200px;
   }
-  .root-container .center .header .title-button.close {
+  .root-container .center .header .openSidenavButton.close {
     display: none;
   }
-}
+  .root-container .center .header .openSidenavButton,
+  .root-container .center .header .title {
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    color: lime;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
 
-@font-face {
-  font-family: "Ubuntu-MonoSpace";
-  src: url(../assets/fonts/UbuntuMono-B.ttf);
-}
+  .sidenav-item {
+    width: 90%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
 
-.root-container .center .header .title,
-a {
-  font-family: "Ubuntu-MonoSpace";
-  color: lime;
-  margin: 0;
-  transition: all 0.6s;
-}
-
-.sidenav-item {
-  width: 90%;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
-.sidenav-item:hover {
-  background-color: rgba(70, 70, 70, 0.5);
+  .root-container .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 }

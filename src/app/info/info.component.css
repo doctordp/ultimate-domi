@@ -1,3 +1,6 @@
+* {
+  font-family: "Ubuntu-MonoSpace";
+}
 .line-1 {
   font-family: "Ubuntu-MonoSpace";
   color: lime;
@@ -29,4 +32,19 @@
   to {
     border-right-color: transparent;
   }
+}
+
+.techIknow {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.techIknow .name {
+  float: left;
+}
+
+.techIknow .image {
+  max-width: 50px;
+  left: 300px;
+  position: absolute;
 }

@@ -63,7 +63,7 @@
   padding: 10px;
   background: black;
   width: 100%;
-  height: 50px;
+  height: 70px;
   top: 0px;
   left: 200px;
 }
@@ -99,7 +99,7 @@ a {
   display: none;
 }
 
-.root-container .sidenav .closebtn.close {
+.root-container .sidenav .closebtn {
   display: none;
 }
 .root-container .sidenav .logo {
@@ -151,10 +151,14 @@ a {
   }
 
   .root-container .sidenav .closebtn {
+    display: inline-block;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+  .root-container .sidenav .closebtn.close {
+    display: none;
   }
 }

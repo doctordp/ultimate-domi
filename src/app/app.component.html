@@ -11,16 +11,12 @@
     <div class="sidenav-item">
       <h2><a [routerLink]="'/info'" (click)="toggleSidenav()">Info</a></h2>
     </div>
-    <div class="sidenav-item">
-      <h2><a [routerLink]="'/info'" (click)="toggleSidenav()">Info</a></h2>
-    </div>
   </div>
   <div class="center">
     <div class="header">
       <span class="openSidenavButton" (click)="toggleSidenav()">&#9776;</span>
-      <h2 class="title">Domi-dev</h2>
+      <h1 class="title">Domi-dev</h1>
     </div>
     <div class="content"><router-outlet></router-outlet></div>
-    <div id="star-five"></div>
   </div>
 </div>

@@ -59,7 +59,7 @@
   margin-left: 200px;
   background: rgba(50, 50, 50);
   width: calc(100% - 200px);
-  min-height: 100% auto;
+  min-height: 100%;
   padding: 0;
   overflow: auto;
 }

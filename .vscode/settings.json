@@ -6,7 +6,7 @@
     "node_modules": true,
     "**/*.spec.ts": true,
     "**/*.gitignore": true,
-    "dist": true,
+    "dist": false,
     "e2e": true,
     "browserslist": true,
     "karma*": true,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mylinks',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MylinksComponent implements OnInit {
 
-  constructor() { }
+
 
   ngOnInit(): void {
   }

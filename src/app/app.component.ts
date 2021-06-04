@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { saludo } from '../../firstSubmodule/';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -21,5 +21,7 @@ export class AppComponent {
     document
       .querySelector('.root-container .sidenav .closebtn')
       .classList.toggle('close');
+
+    saludo();
   }
 }
